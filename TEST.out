@@ -1,0 +1,3 @@
+[2024-10-30 21:30:58,690] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+come here
+final text_encoder_type: bert-base-uncased

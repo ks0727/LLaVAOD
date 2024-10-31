@@ -1,0 +1,21 @@
+#!/bin/bash
+#SBATCH --job-name=TEST
+###########RESOURCES###########
+#SBATCH --partition=48-6
+#SBATCH --gres=gpu:6
+#SBATCH --mem=100G
+#SBATCH --cpus-per-task=64
+###############################
+#SBATCH --output=TEST.out
+#SBATCH --error=TEST.err
+#SBATCH -v
+#######For venv users (if you use Anaconda, please comment out the following) ######
+#. /usr/share/Modules/init/profile.sh
+#module load cuda/11.3
+#module load python/3.9.5
+#source ~/venv/pytorch/bin/activate
+#######For Anacond users (if you use venv, please comment out the following) ######
+source ~/anaconda3/etc/profile.d/conda.sh
+conda activate /home/ksakai/anaconda3/envs/llava
+
+srun  python main.py
