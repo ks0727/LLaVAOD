@@ -1,0 +1,11 @@
+{
+  "mllm_path":"liuhaotian/llava-v1.5-7b",
+  "od_model_path":"/po4/ksakai/models/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py",
+  "od_weight_path":"/po4/ksakai/models/GroundingDINO/weights/groundingdino_swint_ogc.pth",
+  "result_path":"/po4/ksakai/src/llavaOD/result",
+  "od_bbox_threshold":0.35,
+  "od_text_threshold":0.25,
+  "max_num_objects":30,
+  "add_description":true
+}
+
